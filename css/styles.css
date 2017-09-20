@@ -1,0 +1,27 @@
+/***************************************
+Base Styles
+***************************************/
+
+.container,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form h2,form span, header {
+  text-align: center;
+}
+
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  background-color:#2f4f4f;
+  color: white;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 10px;;
+}

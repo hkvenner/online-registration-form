@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Newsletter</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -12,10 +14,10 @@
          <h1>The Code Review</h1>
       </header>
       <form action="index.html" method="post">
-        <h1>Signup for our newsletter</h1>
+        <h2>Signup for our newsletter</h2>
         <span>Get the latest news on how your code is doing right in your inbox
         </span>
-        <fieldset>
+        <fieldset class="contact-info">
           <legend>Contact Information</legend>
           <label for="name">Full Name</label>
           <input type="text" id="name" name="user_name">
@@ -84,27 +86,27 @@
           <label for="zip">Zip Code</label>
           <input type="text" id="zip" name="user_zip">
         </fieldset>
-        <fieldset>
+        <fieldset class="newsletter">
           <legend>Newsletter</legend>
-          <label>Select the newsletters you would like to receive</label>
+          <label>Select the newsletters you would like to receive</label><br>
           <input type="checkbox" id="html" value="html_news"
           name="user_html_interest"><label for="html">HTML News</label><br>
           <input type="checkbox" id="css" value="css_news"
           name="user_css_interest"><label for="css_news">CSS News</label><br>
           <input type="checkbox" id="javascript" value="javascript_news"
-          name="user_javascript_interest"><label for="javascript">Javascript News</label>
+          name="user_javascript_interest"><label for="javascript">Javascript News</label><br>
 
-          <label>Newsletter Format</label>
+          <label>Newsletter Format</label><br>
           <input type="radio" id="html_format" value="html"
           name="user_format_pref"><label for="html-format">HTML</label><br>
           <input type="radio" id="text_format" value="text_format"
-          name="user_format_pref"><label for="text_format">Plain text</label>
+          name="user_format_pref"><label for="text_format">Plain text</label><br>
 
-          <label for="topics">Other topics you'd like to hear about</label>
+          <label for="topics">Other topics you'd like to hear about</label><br>
           <textarea id="topics" name="user_topics"></textarea>
         </fieldset>
 
-        <button type="submit">Sign Up</button>
+        <button type="submit">Sign Up</button><br>
         <span>Copyright The Code Review</span>
     </form>
    </div> <!--end of container-->
