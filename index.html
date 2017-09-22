@@ -31,6 +31,7 @@
           <input type="text" id="city" name="user_city">
           <label for="state">State</label>
             <select id="state" name="user_state">
+            <option value="" disabled selected>Choose State</option>
           	<option value="AL">Alabama</option>
           	<option value="AK">Alaska</option>
           	<option value="AZ">Arizona</option>
@@ -88,26 +89,28 @@
         </fieldset>
         <fieldset class="newsletter">
           <legend>Newsletter</legend>
-          <label>Select the newsletters you would like to receive</label><br>
+          <span>Select the newsletters you would like to receive</span><br><br>
           <input type="checkbox" id="html" value="html_news"
           name="user_html_interest"><label for="html">HTML News</label><br>
           <input type="checkbox" id="css" value="css_news"
           name="user_css_interest"><label for="css_news">CSS News</label><br>
           <input type="checkbox" id="javascript" value="javascript_news"
-          name="user_javascript_interest"><label for="javascript">Javascript News</label><br>
+          name="user_javascript_interest"><label for="javascript">Javascript News
+          </label><br><br>
 
           <label>Newsletter Format</label><br>
           <input type="radio" id="html_format" value="html"
           name="user_format_pref"><label for="html-format">HTML</label><br>
           <input type="radio" id="text_format" value="text_format"
-          name="user_format_pref"><label for="text_format">Plain text</label><br>
+          name="user_format_pref"><label for="text_format">Plain text</label><br><br>
 
           <label for="topics">Other topics you'd like to hear about</label><br>
           <textarea id="topics" name="user_topics"></textarea>
         </fieldset>
-
-        <button type="submit">Sign Up</button><br>
-        <span>Copyright The Code Review</span>
+        <div class="form-footer">
+          <button type="submit">Sign Up</button><br>
+          <span>Copyright The Code Review</span>
+        </div>
     </form>
    </div> <!--end of container-->
   </body>

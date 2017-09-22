@@ -18,7 +18,7 @@ form {
   border-style: none;
 }
 
-form h2,form span, header {
+form h2,form span, header, .form-footer {
   text-align: center;
 }
 
@@ -79,4 +79,53 @@ select {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
   font-style: italic;
+}
+
+select {
+    padding: 6px;
+    border-radius: 2px;
+    width: 101%;
+    height: 45px;
+    text-align: left;
+}
+
+#zip {
+  width: 50%;
+}
+
+.newsletter span ~ label {
+  line-height: 28px;
+}
+
+textarea {
+  height: 80px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #008080;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 95%;
+  border: 1px solid #008080;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+
+}
+
+.form-footer span {
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 100;
+  color:gray;
+}
+
+.newsletter legend {
+  border-top: solid 2px;
+  padding-right: 60%;
+  padding-top: 25px;
 }
