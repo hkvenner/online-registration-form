@@ -9,8 +9,37 @@ Base Styles
   align-items: center;
 }
 
+form {
+  width: 95%;
+}
+
+.contact-info,
+.newsletter {
+  border-style: none;
+}
+
 form h2,form span, header {
   text-align: center;
+}
+
+form h2,
+form legend {
+  font-size: 1.25em;
+}
+
+form legend {
+  font-weight: bold;
+}
+
+form h3 {
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: 100;
+  color:gray;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 15px;
+  border-bottom: double 5px black;
 }
 
 
@@ -24,4 +53,30 @@ header {
   width: 100%;
   text-transform: uppercase;
   font-size: 10px;;
+}
+
+legend {
+  padding-bottom: 26px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  text-align: right;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 94%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+  font-style: italic;
 }
