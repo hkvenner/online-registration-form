@@ -89,7 +89,7 @@ select {
     text-align: left;
 }
 
-#zip {
+.zip {
   width: 50%;
 }
 
@@ -128,4 +128,58 @@ button {
   border-top: solid 2px;
   padding-right: 60%;
   padding-top: 25px;
+}
+
+.form-footer {
+  padding-bottom: 200px;
+}
+
+/***************************************
+Media Queries
+***************************************/
+
+@media (min-width: 768px) {
+  form {
+    width: 60%;
+  }
+
+  h2 {
+    padding-top: 30px;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .wrap input:not(.zip){
+    width: 280px;
+  }
+
+  select {
+    width: 300px;
+  }
+
+  .zip[type="text"] {
+    width: 90px;
+  }
+
+  .zip-wrap {
+    justify-content: flex-start;
+  }
+
+  .zip-wrap label {
+    padding-right: 70px;
+  }
+
+  .newsletter legend {
+    padding-right: 75%;
+  }
+
+  .newsletter label:not(.heading) {
+    padding-left: 15px;
+  }
+
+
 }
