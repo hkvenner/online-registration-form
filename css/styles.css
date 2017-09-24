@@ -65,7 +65,7 @@ input[type="number"],
 input[type="tel"],
 textarea,
 select {
-  text-align: right;
+  text-align: left;
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 16px;
@@ -79,6 +79,16 @@ select {
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
   font-style: italic;
+}
+
+input::placeholder {
+  text-align: right;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: solid 2px #2F4F4F;
 }
 
 select {
@@ -134,6 +144,10 @@ button {
   padding-bottom: 200px;
 }
 
+.newsletter label:not(.heading) {
+  padding-left: 15px;
+}
+
 /***************************************
 Media Queries
 ***************************************/
@@ -154,11 +168,11 @@ Media Queries
   }
 
   .wrap input:not(.zip){
-    width: 280px;
+    width: 60%;
   }
 
   select {
-    width: 300px;
+    width: 62.5%;
   }
 
   .zip[type="text"] {
@@ -176,10 +190,5 @@ Media Queries
   .newsletter legend {
     padding-right: 75%;
   }
-
-  .newsletter label:not(.heading) {
-    padding-left: 15px;
-  }
-
 
 }
