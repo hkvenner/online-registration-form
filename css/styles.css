@@ -2,6 +2,10 @@
 Base Styles
 ***************************************/
 
+* {
+  box-sizing: border-box;
+}
+
 .container,
 .contact-info {
   display: flex;
@@ -9,8 +13,12 @@ Base Styles
   align-items: center;
 }
 
+.contact-info {
+  align-self: center;
+}
+
 form {
-  width: 95%;
+  width: 100%;
 }
 
 .contact-info,
@@ -132,6 +140,7 @@ button {
   font-size: 1em;
   font-weight: 100;
   color:gray;
+  text-align: center;
 }
 
 .newsletter legend {
@@ -142,10 +151,15 @@ button {
 
 .form-footer {
   padding-bottom: 200px;
+  align-self: center;
 }
 
 .newsletter label:not(.heading) {
   padding-left: 15px;
+}
+
+.wrap {
+  font-size: 1.2em;
 }
 
 /***************************************
@@ -153,9 +167,6 @@ Media Queries
 ***************************************/
 
 @media (min-width: 768px) {
-  form {
-    width: 60%;
-  }
 
   h2 {
     padding-top: 30px;
@@ -167,28 +178,34 @@ Media Queries
     align-items: baseline;
   }
 
-  .wrap input:not(.zip){
+  .wrap input:not(.zip),
+  select,
+  form {
     width: 60%;
   }
 
-  select {
-    width: 62.5%;
-  }
-
   .zip[type="text"] {
-    width: 90px;
+    /*width: 90px;*/
+   width: 30%;
   }
 
   .zip-wrap {
     justify-content: flex-start;
   }
 
-  .zip-wrap label {
+  /*.zip-wrap label {
     padding-right: 70px;
+    /*padding-right: 20%;*/
+
+
+  .wrap label {
+    width: 40%;
   }
 
+
   .newsletter legend {
-    padding-right: 75%;
+    width: 100%;
   }
+
 
 }
