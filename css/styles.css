@@ -17,10 +17,15 @@ Base Styles
   align-self: center;
 }
 
+/*Changed color of background of the form*/
 form {
   width: 100%;
+  background-color: rgba(240, 248, 255, 0.4);
 }
 
+form {
+
+}
 .contact-info,
 .newsletter {
   border-style: none;
