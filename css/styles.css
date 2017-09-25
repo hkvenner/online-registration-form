@@ -23,9 +23,6 @@ form {
   background-color: rgba(240, 248, 255, 0.4);
 }
 
-form {
-
-}
 .contact-info,
 .newsletter {
   border-style: none;
@@ -205,11 +202,6 @@ Media Queries
   .zip-wrap {
     justify-content: flex-start;
   }
-
-  /*.zip-wrap label {
-    padding-right: 70px;
-    /*padding-right: 20%;*/
-
 
   .wrap label {
     width: 40%;
