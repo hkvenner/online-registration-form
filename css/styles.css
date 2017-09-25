@@ -98,10 +98,18 @@ input::placeholder {
   text-align: right;
 }
 
+/*added CSS transitions for focus states and effects for highlighting form fields */
 input:focus,
 select:focus,
 textarea:focus {
   border: solid 2px #2F4F4F;
+  background-color: #f0fbff;
+}
+
+input,
+select,
+textarea {
+  transition: all 1s ease-out;
 }
 
 select {
